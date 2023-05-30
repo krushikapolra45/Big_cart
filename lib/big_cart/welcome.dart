@@ -14,8 +14,40 @@ class _WelcomeState extends State<Welcome> {
       body: Column(
         children: [
           Stack(
-            children: [Image.asset("assets/images/bigCart .png")],
-          )
+            alignment: Alignment.topCenter,
+            children: [
+              Image.asset(
+                "assets/images/markus.png",
+                height: 800,
+                width: 415,
+                fit: BoxFit.cover,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 70),
+                child: Column(
+                  children: [
+                    const Text(
+                      "Welcome to",
+                      style: TextStyle(
+                        color: Color(0xFF000000),
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Image.asset(
+                      "assets/images/bigCart .png",
+                      width: 127,
+                      height: 50,
+                    ),
+                    Text(
+                      "Lorem ipsum dolor sit amet, consetetur \n sadipscing elitr, sed diam nonumy",
+                      style: TextStyle(color: Color(0xFF868889), fontSize: 10),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
