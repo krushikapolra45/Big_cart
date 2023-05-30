@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'big_cart/welcome.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: Welcome(),
     );
   }
 }

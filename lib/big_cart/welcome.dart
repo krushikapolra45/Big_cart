@@ -14,7 +14,7 @@ class _WelcomeState extends State<Welcome> {
       body: Column(
         children: [
           Stack(
-            children: [Image.asset("assets/")],
+            children: [Image.asset("assets/images/bigCart .png")],
           )
         ],
       ),
