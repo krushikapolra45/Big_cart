@@ -19,7 +19,7 @@ class _NotificationsState extends State<Notifications> {
           "Notifications",
           style: TextStyle(
               fontFamily: "Poppins",
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.w700,
               fontSize: 18,
               color: Color(0xFF000000)),
         ),
