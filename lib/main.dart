@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'big_cart/welcome.dart';
+import 'big_cart/otp_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Welcome(),
+      home: const OtpScreen(),
     );
   }
 }
