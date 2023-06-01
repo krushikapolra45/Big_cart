@@ -1,4 +1,4 @@
-import 'package:big_cart/big_cart/shopping_method.dart';
+import 'package:big_cart/big_cart/about_me.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ShoppingMethod(),
+      home: AboutMe(),
     );
   }
 }
