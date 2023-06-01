@@ -70,7 +70,7 @@ class _OtpScreenState extends State<OtpScreen> {
             const SizedBox(
               height: 15,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 StartedContainer(
@@ -83,7 +83,7 @@ class _OtpScreenState extends State<OtpScreen> {
               "Did’nt receive the code ?",
               style: TextStyle(fontSize: 16),
             ),
-            Text(
+            const Text(
               "Resend a new code",
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
             ),
