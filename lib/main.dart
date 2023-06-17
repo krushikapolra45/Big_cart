@@ -1,7 +1,5 @@
-import 'package:big_cart/big_cart/about_me.dart';
+import 'package:big_cart/big_cart/search.dart';
 import 'package:flutter/material.dart';
-
-import 'big_cart/otp_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,11 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-<<<<<<< HEAD
-      home: AboutMe(),
-=======
-      home: const OtpScreen(),
->>>>>>> bf87f96cba10ae8d1e598615c17a14b1161f8c13
+      home: const Search(),
     );
   }
 }
