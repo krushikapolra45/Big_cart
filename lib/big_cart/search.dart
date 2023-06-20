@@ -87,7 +87,63 @@ class _SearchState extends State<Search> {
                   ],
                 ),
               ),
-            )
+            ),
+            const SizedBox(height: 20),
+            const Row(
+              children: [
+                SizedBox(width: 18),
+                Text(
+                  textAlign: TextAlign.start,
+                  "Discover more",
+                  style: TextStyle(
+                    color: Color(0xFF000000),
+                    fontWeight: FontWeight.w900,
+                    fontSize: 20,
+                    fontFamily: "Poppins",
+                  ),
+                ),
+                SizedBox(width: 170),
+                Text(
+                  textAlign: TextAlign.right,
+                  "clear",
+                  style: TextStyle(
+                    color: Color(0xFF407EC7),
+                    fontWeight: FontWeight.w500,
+                    fontSize: 14,
+                    fontFamily: "Poppins",
+                  ),
+                ),
+              ],
+            ),
+            const SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Padding(
+                padding: EdgeInsets.only(top: 18, left: 5, right: 5),
+                child: Row(
+                  children: [
+                    Search_History(
+                      name: "Fresh Grocery",
+                    ),
+                    SizedBox(width: 5),
+                    Search_History(
+                      name: "Bananas",
+                    ),
+                    SizedBox(width: 5),
+                    Search_History(
+                      name: "cheetos",
+                    ),
+                    SizedBox(width: 5),
+                    Search_History(
+                      name: "vegetables",
+                    ),
+                    SizedBox(width: 5),
+                    Search_History(
+                      name: "Fruits",
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
