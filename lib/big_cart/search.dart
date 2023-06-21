@@ -140,7 +140,11 @@ class _SearchState extends State<Search> {
                     Search_History(
                       name: "Fruits",
                     ),
-                      const SingleChildScrollView(
+                  ],
+                ),
+              ),
+            ),
+            const SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Padding(
                 padding: EdgeInsets.only(top: 18, left: 5, right: 5),
