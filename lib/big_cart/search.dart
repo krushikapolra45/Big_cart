@@ -140,6 +140,31 @@ class _SearchState extends State<Search> {
                     Search_History(
                       name: "Fruits",
                     ),
+                      const SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Padding(
+                padding: EdgeInsets.only(top: 18, left: 5, right: 5),
+                child: Row(
+                  children: [
+                    Search_History(
+                      name: "Fresh Grocery",
+                    ),
+                    SizedBox(width: 5),
+                    Search_History(
+                      name: "Bananas",
+                    ),
+                    SizedBox(width: 5),
+                    Search_History(
+                      name: "cheetos",
+                    ),
+                    SizedBox(width: 5),
+                    Search_History(
+                      name: "vegetables",
+                    ),
+                    SizedBox(width: 5),
+                    Search_History(
+                      name: "Fruits",
+                    ),
                   ],
                 ),
               ),
