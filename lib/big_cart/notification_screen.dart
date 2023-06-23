@@ -64,11 +64,11 @@ class _Notification_ScreenState extends State<Notification_Screen> {
               height: 60,
               width: 360,
               decoration: BoxDecoration(
-                color: Color(0xFF6CC51D),
+                color: const Color(0xFF6CC51D),
                 borderRadius: BorderRadius.circular(5),
               ),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 30),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 30),
                 child: Text(
                   "Save settings",
                   style: TextStyle(
