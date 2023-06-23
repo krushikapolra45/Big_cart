@@ -1,5 +1,4 @@
-import 'package:big_cart/big_cart/address.dart';
-import 'package:big_cart/big_cart/track_order.dart';
+import 'package:big_cart/big_cart/notification_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Track_Order(),
+      home: const Notification_Screen(),
     );
   }
 }
