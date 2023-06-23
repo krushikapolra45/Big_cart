@@ -67,14 +67,14 @@ class _Notification_ScreenState extends State<Notification_Screen> {
                 color: const Color(0xFF6CC51D),
                 borderRadius: BorderRadius.circular(5),
               ),
-              child: const Padding(
-                padding: EdgeInsets.only(left: 30),
+              child: const Align(
+                alignment: Alignment.center,
                 child: Text(
                   "Save settings",
                   style: TextStyle(
                     color: Color(0xFFFFFFFF),
                     fontWeight: FontWeight.w500,
-                    fontSize: 12,
+                    fontSize: 13,
                     fontFamily: "poppins",
                   ),
                 ),
