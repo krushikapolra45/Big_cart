@@ -9,6 +9,7 @@ class Notification_Screen extends StatefulWidget {
 }
 
 class _Notification_ScreenState extends State<Notification_Screen> {
+  bool switchvalue = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,6 +38,65 @@ class _Notification_ScreenState extends State<Notification_Screen> {
               padding: EdgeInsets.only(left: 15),
               child: Column(
                 children: [
+                  // Container(
+                  //   width: 360,
+                  //   height: 103,
+                  //   decoration: const BoxDecoration(
+                  //     color: Color(0xFFFFFFFF),
+                  //   ),
+                  //   child: Padding(
+                  //     padding: const EdgeInsets.all(20),
+                  //     child: Row(
+                  //       crossAxisAlignment: CrossAxisAlignment.start,
+                  //       children: [
+                  //         Column(
+                  //           children: [
+                  //             const Row(
+                  //               children: [
+                  //                 Text(
+                  //                   "Allow Notifcations",
+                  //                   style: TextStyle(
+                  //                     color: Color(0xFF000000),
+                  //                     fontSize: 16,
+                  //                     fontWeight: FontWeight.w700,
+                  //                   ),
+                  //                 ),
+                  //               ],
+                  //             ),
+                  //             const SizedBox(height: 16),
+                  //             const Row(
+                  //               children: [
+                  //                 Text(
+                  //                   "Lorem ipsum dolor sit amet, consetetur sadi \npscing elitr, sed diam nonumym",
+                  //                   style: TextStyle(
+                  //                     color: Color(0xFF868889),
+                  //                     fontSize: 12,
+                  //                     fontWeight: FontWeight.w500,
+                  //                   ),
+                  //                 ),
+                  //               ],
+                  //             ),
+                  //             Row(
+                  //               children: [
+                  //                 CupertinoSwitch(
+                  //                   activeColor: Colors.black,
+                  //                   focusColor: Colors.purpleAccent,
+                  //                   value: switchvalue,
+                  //                   onChanged: (value) {
+                  //                     debugPrint("value ----> $value");
+                  //                     setState(() {
+                  //                       switchvalue = value;
+                  //                     });
+                  //                   },
+                  //                 ),
+                  //               ],
+                  //             ),
+                  //           ],
+                  //         ),
+                  //       ],
+                  //     ),
+                  //   ),
+                  // ),
                   All_Notification(
                     text: "Allow Notifcations",
                     name: "Lorem ipsum dolor sit amet, consetetur sadi \npscing elitr, sed diam nonumym",
