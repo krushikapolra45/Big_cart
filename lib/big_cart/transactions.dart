@@ -48,7 +48,7 @@ class _TransactionsState extends State<Transactions> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 10),
                   Row(
                     children: [
                       Transaction(
@@ -59,7 +59,7 @@ class _TransactionsState extends State<Transactions> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 10),
                   Row(
                     children: [
                       Transaction(
@@ -70,7 +70,7 @@ class _TransactionsState extends State<Transactions> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 10),
                   Row(
                     children: [
                       Transaction(
@@ -81,7 +81,7 @@ class _TransactionsState extends State<Transactions> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 10),
                   Row(
                     children: [
                       Transaction(
@@ -92,7 +92,7 @@ class _TransactionsState extends State<Transactions> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 10),
                   Row(
                     children: [
                       Transaction(

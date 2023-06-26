@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
-class All_Notification extends StatelessWidget {
+class AllNotification extends StatelessWidget {
   final String? text;
   final String? name;
 
-  const All_Notification({Key? key, this.text, this.name}) : super(key: key);
+  const AllNotification({Key? key, this.text, this.name}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -38,18 +39,6 @@ class All_Notification extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                // bool switchvalue = true;
-                // CupertinoSwitch(
-                //     activeColor: Colors.black,
-                //     focusColor: Colors.purpleAccent,
-                //     value: switchvalue,
-                //     onChanged: (value) {
-                //       debugPrint("value ----> $value");
-                //       setState(() {
-                //         switchvalue = value;
-                //       });
-                //     },
-                //   ),
               ],
             ),
           ),

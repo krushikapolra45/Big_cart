@@ -1,4 +1,4 @@
-import 'package:big_cart/big_cart/notification_screen.dart';
+import 'package:big_cart/big_cart/transactions.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Notification_Screen(),
+      home: const Transactions(),
     );
   }
 }
