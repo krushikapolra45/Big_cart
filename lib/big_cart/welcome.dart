@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../common/started_container.dart';
+import 'auth_welcome.dart';
 
 class Welcome extends StatefulWidget {
   const Welcome({Key? key}) : super(key: key);
@@ -54,12 +54,48 @@ class _WelcomeState extends State<Welcome> {
                     const SizedBox(
                       height: 500,
                     ),
-                    Row(
-                      children: [
-                        StartedContainer(
-                          name: "Get started",
-                        ),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15, top: 20, right: 15),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 60,
+                            width: 360,
+                            decoration: const BoxDecoration(
+                              gradient: LinearGradient(
+                                colors: [
+                                  Color(0xFFAEDC81),
+                                  Color(0xFF6CC51D),
+                                ],
+                              ),
+                              borderRadius: BorderRadius.all(Radius.circular(5)),
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => const AuthWelcome(),
+                                      ),
+                                    );
+                                  },
+                                  child: const Text(
+                                    "Get Started",
+                                    style: TextStyle(
+                                      fontSize: 17,
+                                      color: Color(0xFFFFFFFF),
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'auth_signup.dart';
+
 class AuthLogin extends StatefulWidget {
   const AuthLogin({Key? key}) : super(key: key);
 
@@ -22,9 +24,10 @@ class _AuthLoginState extends State<AuthLogin> {
             padding: EdgeInsets.only(left: 12, top: 60),
             child: Row(
               children: [
-                Icon(
-                  Icons.arrow_back_outlined,
-                  size: 25,
+                BackButton(
+                  style: ButtonStyle(
+                    iconSize: MaterialStatePropertyAll(25),
+                  ),
                   color: Color(0xFFFFFFFF),
                 ),
                 SizedBox(width: 120),
@@ -81,60 +84,68 @@ class _AuthLoginState extends State<AuthLogin> {
                     ),
                   ),
                   const SizedBox(height: 20),
-                  Container(
-                    height: 60,
-                    width: 360,
-                    decoration: const BoxDecoration(
-                      color: Color(0xFFFFFFFF),
-                    ),
-                    child: Row(
-                      children: [
-                        const SizedBox(width: 20),
-                        Image.asset(
-                          "assets/images/email.png",
-                          height: 22.52,
-                          width: 24,
-                        ),
-                        const SizedBox(width: 30),
-                        const Text(
-                          "Email Address",
-                          style: TextStyle(
-                            fontSize: 17,
-                            color: Color(0xFF868889),
-                            fontWeight: FontWeight.w500,
+                  const Padding(
+                    padding: EdgeInsets.only(left: 15, right: 15),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        contentPadding: EdgeInsets.all(20),
+                        isDense: true,
+                        border: InputBorder.none,
+                        filled: true,
+                        fillColor: Color(0xFFFFFFFF),
+                        suffixIcon: Padding(
+                          padding: EdgeInsets.all(14),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.email_outlined,
+                                color: Color(0xFF9E9E9E),
+                                size: 25,
+                              ),
+                              SizedBox(width: 30),
+                              Text(
+                                "Email Address",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color(0xFF868889),
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                      ],
+                      ),
                     ),
                   ),
                   const SizedBox(height: 10),
-                  Container(
-                    height: 60,
-                    width: 360,
-                    decoration: const BoxDecoration(
-                      color: Color(0xFFFFFFFF),
-                    ),
-                    child: Row(
-                      children: [
-                        const SizedBox(width: 20),
-                        Image.asset(
-                          "assets/images/lock.png",
-                          height: 24,
-                          width: 23,
+                  const Padding(
+                    padding: EdgeInsets.only(left: 15, right: 15),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        contentPadding: EdgeInsets.all(20),
+                        isDense: true,
+                        border: InputBorder.none,
+                        filled: true,
+                        fillColor: Color(0xFFFFFFFF),
+                        suffixIcon: Padding(
+                          padding: EdgeInsets.all(14),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.lock_outline_rounded,
+                                color: Color(0xFF9E9E9E),
+                                size: 25,
+                              ),
+                              Spacer(),
+                              Icon(
+                                Icons.remove_red_eye_outlined,
+                                color: Color(0xFF9E9E9E),
+                                size: 25,
+                              ),
+                            ],
+                          ),
                         ),
-                        const SizedBox(width: 30),
-                        Image.asset(
-                          "assets/images/password.png",
-                          height: 8.79,
-                          width: 127,
-                        ),
-                        const SizedBox(width: 120),
-                        Image.asset(
-                          "assets/images/show.png",
-                          height: 16.88,
-                          width: 26.48,
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                   Padding(
@@ -180,15 +191,25 @@ class _AuthLoginState extends State<AuthLogin> {
                       ),
                       borderRadius: BorderRadius.all(Radius.circular(5)),
                     ),
-                    child: const Row(
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
-                          "Login",
-                          style: TextStyle(
-                            fontSize: 17,
-                            color: Color(0xFFFFFFFF),
-                            fontWeight: FontWeight.w500,
+                        TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const AuthSignup(),
+                              ),
+                            );
+                          },
+                          child: const Text(
+                            "Signup",
+                            style: TextStyle(
+                              fontSize: 17,
+                              color: Color(0xFFFFFFFF),
+                              fontWeight: FontWeight.w500,
+                            ),
                           ),
                         ),
                       ],

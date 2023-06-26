@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Auth_Welcome extends StatefulWidget {
-  const Auth_Welcome({Key? key}) : super(key: key);
+import 'auth_login.dart';
+
+class AuthWelcome extends StatefulWidget {
+  const AuthWelcome({Key? key}) : super(key: key);
 
   @override
-  State<Auth_Welcome> createState() => _Auth_WelcomeState();
+  State<AuthWelcome> createState() => _AuthWelcomeState();
 }
 
-class _Auth_WelcomeState extends State<Auth_Welcome> {
+class _AuthWelcomeState extends State<AuthWelcome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,9 +26,10 @@ class _Auth_WelcomeState extends State<Auth_Welcome> {
                 padding: EdgeInsets.only(left: 15, top: 70),
                 child: Row(
                   children: [
-                    Icon(
-                      Icons.arrow_back_outlined,
-                      size: 25,
+                    BackButton(
+                      style: ButtonStyle(
+                        iconSize: MaterialStatePropertyAll(25),
+                      ),
                       color: Color(0xFFFFFFFF),
                     ),
                     SizedBox(width: 120),
@@ -123,20 +126,37 @@ class _Auth_WelcomeState extends State<Auth_Welcome> {
                           borderRadius: BorderRadius.all(Radius.circular(5)),
                         ),
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            SizedBox(width: 25),
-                            Image.asset(
-                              "assets/images/account.png",
-                              height: 26,
-                              width: 26,
-                            ),
-                            const SizedBox(width: 60),
-                            const Text(
-                              "Create an account",
-                              style: TextStyle(
-                                fontSize: 17,
-                                color: Color(0xFFFFFFFF),
-                                fontWeight: FontWeight.w500,
+                            TextButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const AuthLogin(),
+                                  ),
+                                );
+                              },
+                              child: Padding(
+                                padding: const EdgeInsets.only(right: 80),
+                                child: Row(
+                                  children: [
+                                    Image.asset(
+                                      "assets/images/account.png",
+                                      height: 26,
+                                      width: 26,
+                                    ),
+                                    const SizedBox(width: 60),
+                                    const Text(
+                                      "Create an account",
+                                      style: TextStyle(
+                                        fontSize: 17,
+                                        color: Color(0xFFFFFFFF),
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ],
