@@ -19,12 +19,15 @@ class StartedContainer extends StatelessWidget {
           ],
         ),
       ),
-      child: Text(
-        name ?? "",
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 15,
-          fontWeight: FontWeight.bold,
+      child: TextButton(
+        onPressed: () {},
+        child: Text(
+          name ?? "",
+          style: TextStyle(
+            fontSize: 17,
+            color: Color(0xFFFFFFFF),
+            fontWeight: FontWeight.w500,
+          ),
         ),
       ),
     );

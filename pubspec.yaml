@@ -43,6 +43,8 @@ flutter:
     - assets/search_images/
     - assets/Transactions_images/
     - assets/tarck_images/
+    - assets/images/free.png
+    - assets/images/same.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

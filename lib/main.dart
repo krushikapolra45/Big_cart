@@ -1,5 +1,6 @@
-import 'package:big_cart/big_cart/filter_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'big_cart/order_success.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const FilterScreen(),
+      home: const OrderSuccess(),
     );
   }
 }

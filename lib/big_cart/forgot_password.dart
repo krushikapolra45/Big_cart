@@ -12,11 +12,11 @@ class ForgotPassword extends StatefulWidget {
 class _ForgotPasswordState extends State<ForgotPassword> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SafeArea(
         child: Column(
           children: [
-            const Row(
+            Row(
               children: [
                 Padding(
                   padding: EdgeInsets.all(8),
@@ -37,17 +37,17 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 ),
               ],
             ),
-            const SizedBox(
+            SizedBox(
               height: 90,
             ),
-            const Text(
+            Text(
               "Forgot Password",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
             ),
-            const SizedBox(
+            SizedBox(
               height: 30,
             ),
-            const Text(
+            Text(
               "Lorem ipsum dolor sit amet, consetetur\n sadipscing elitr, sed diam nonumy",
               style: TextStyle(
                 fontSize: 15,
@@ -55,41 +55,45 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               ),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(
+            SizedBox(
               height: 30,
             ),
-            Container(
-              height: 60,
-              width: 370,
-              padding: const EdgeInsets.only(left: 20),
-              decoration: BoxDecoration(
-                color: const Color(0xFFFFFFFF),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: const Row(
-                children: [
-                  Icon(
-                    Icons.email_outlined,
-                    color: Color(0xFF868889),
-                    size: 20,
-                  ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  Text(
-                    "Email Address",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Color(0xFF868889),
+            Padding(
+              padding: EdgeInsets.only(left: 15, right: 15),
+              child: TextField(
+                decoration: InputDecoration(
+                  contentPadding: EdgeInsets.all(20),
+                  isDense: true,
+                  border: InputBorder.none,
+                  filled: true,
+                  fillColor: Color(0xFFFFFFFF),
+                  suffixIcon: Padding(
+                    padding: EdgeInsets.all(14),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.email_outlined,
+                          color: Color(0xFF9E9E9E),
+                          size: 25,
+                        ),
+                        SizedBox(width: 30),
+                        Text(
+                          "Email Address",
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Color(0xFF868889),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ],
+                ),
               ),
             ),
-            const SizedBox(
+            SizedBox(
               height: 30,
             ),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 StartedContainer(
