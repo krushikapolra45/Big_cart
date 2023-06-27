@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'big_cart/order_success.dart';
+import 'big_cart/category_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const OrderSuccess(),
+      home: const CategoryScreen(),
     );
   }
 }
