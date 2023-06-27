@@ -1,4 +1,4 @@
-import 'package:big_cart/big_cart/welcome.dart';
+import 'package:big_cart/big_cart/filter_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Welcome(),
+      home: const FilterScreen(),
     );
   }
 }

@@ -10,6 +10,7 @@ class AuthLogin extends StatefulWidget {
 }
 
 class _AuthLoginState extends State<AuthLogin> {
+  bool switchvalue = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -148,35 +149,38 @@ class _AuthLoginState extends State<AuthLogin> {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 12, left: 20),
-                    child: Row(
-                      children: [
-                        Image.asset(
-                          "assets/images/Remember.png",
-                          height: 20,
-                          width: 32,
+                  Row(
+                    children: [
+                      Switch(
+                        activeColor: Colors.white,
+                        activeTrackColor: const Color(0xFFF4F5F9),
+                        hoverColor: const Color(0xFF868889),
+                        onChanged: (value) {
+                          debugPrint("value ----> $value");
+                          setState(() {
+                            switchvalue = value;
+                          });
+                        },
+                        value: switchvalue,
+                      ),
+                      const Text(
+                        "Remember me",
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: Color(0xFF868889),
+                          fontWeight: FontWeight.w500,
                         ),
-                        const SizedBox(width: 15),
-                        const Text(
-                          "Remember me",
-                          style: TextStyle(
-                            fontSize: 17,
-                            color: Color(0xFF868889),
-                            fontWeight: FontWeight.w500,
-                          ),
+                      ),
+                      const SizedBox(width: 70),
+                      const Text(
+                        "Forgot password",
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: Color(0xFF407EC7),
+                          fontWeight: FontWeight.w500,
                         ),
-                        const SizedBox(width: 60),
-                        const Text(
-                          "Forgot password",
-                          style: TextStyle(
-                            fontSize: 17,
-                            color: Color(0xFF407EC7),
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                   const SizedBox(height: 20),
                   Container(

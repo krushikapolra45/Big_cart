@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../common/all_names.dart';
+
 class AboutMe extends StatefulWidget {
   const AboutMe({Key? key}) : super(key: key);
 
@@ -23,19 +25,8 @@ class _AboutMeState extends State<AboutMe> {
               padding: EdgeInsets.only(top: 50, left: 18),
               child: Row(
                 children: [
-                  Icon(
-                    Icons.arrow_back_outlined,
-                    size: 28,
-                    color: Color(0xFF000000),
-                  ),
-                  SizedBox(width: 100),
-                  Text(
-                    "About me",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 19,
-                      color: Color(0xFF000000),
-                    ),
+                  AllNames(
+                    name: "about me",
                   ),
                 ],
               ),
